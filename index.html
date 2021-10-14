@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login-Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+			<a href="https://www.facebook.com/rohan.dhadke.7" target="blank"><img src="fb.png"></a>
+			<a href="https://www.instagram.com/mr.rohan_dhadke01/" target="blank"><img src="ig.png"></a>
+			<a href="https://www.linkedin.com/in/rohan-dhadke-774a3721a/" target="blank"><img src="li.png"></a>
+			</div>
+			<form id = "login" class="input-group">
+				<input type="text" class="input-field" placeholder="User ID" required>
+				<input type="password" class="input-field" placeholder="Password" required>
+				<input type="checkbox" class="checkbox"> <span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log in</button>
+			</form>
+			<form id = "register" class="input-group">
+				<input type="text" class="input-field" placeholder="User ID" required>
+				<input type="email" class="input-field" placeholder="Email ID" required>
+				<input type="password" class="input-field" placeholder="Password" required>
+				<input type="checkbox" class="checkbox"> <span>I agree to the terms & conditions</span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+	</div>
+	<script>
+		var a = document.getElementById("login");
+		var b = document.getElementById("register");
+		var c = document.getElementById("btn");
+		function register(){
+			a.style.left = "-400px";
+			b.style.left = "50px";
+			c.style.left = "110px";
+		}
+		function login(){
+			a.style.left = "50px";
+			b.style.left = "450px";
+			c.style.left = "0px";
+		}
+	</script>
+</body>
+</html>
